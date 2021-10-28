@@ -6,24 +6,80 @@
   </head>
   <body>
       <table class = "field" colspan = "8">
-        <title class = "fieldName">Pennington Field</title>
+        <thead>
+          <tr>
+        <th colspan = "8">Pennington Field</th>
+        </tr>
+      </thead>
+
+        <tbody>
       <tr class = "scores">
-        <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>R</td>
+       <td> </td> <!-- Empty data cell  -->
+        <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td><b>R</b></td>
       </tr>
       <tr class = "homeScores">
-        HOME 
-        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        <th>HOME </th>
+        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><b>0</b></td>
       </tr>
       <tr class = "awayScores">
-        AWAY
-        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        <th>AWAY</th>
+        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><b>0</b></td>
       </tr>
+    </tbody>
     </table>
 
     <table class = "controlCenter">
       <title>Control Center</title>
-      <tr class = "selectTeam"></tr>
-      <td></td>
+      <tr class = "selectTeam">
+      <td>Who: <select value = "teams">
+        <option>
+          Away
+        </option>
+        <option>
+          Home
+        </option>
+      </select>
+      </td>
+      <td>Inning: <select value = "points">
+        <option>
+          1
+        </option>
+        <option>
+          2
+        </option>
+        <option>
+          3
+        </option>
+        <option>
+          4
+        </option>
+        <option>
+          5
+        </option>
+        <option>
+          6
+        </option>
+        <option>
+          7
+        </option>
+      </select></td>
+
+    </tr>
+
+      <tr>
+        <td> Runs:
+        <button id = "add">+</button>
+        <button id = "subtract">-</button>
+      </td>
+      </tr>
+
+    <tr>
+      <td> Sound:
+      <button id = "tune">🎵</button>
+      <button id = "annoyingSong">🎹</button>
+    </td>
+    </tr>
+    
     </table>
  
     <script src="app.js"></script>

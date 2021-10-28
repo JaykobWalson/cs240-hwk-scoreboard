@@ -1,11 +1,12 @@
-/* Your CSS definitions here */
-.fieldName {
+/* Your CSS definition here */
+th {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 28pt;
+  font-size: 14pt;
   color: white;
-  top: 5px;
+  text-align: center;
   border-spacing: 10px;
-  left: 30px;
+  white-space: nowrap;
+  left: 40px;
 }
 
 .homeScores {
@@ -39,4 +40,14 @@
   width: 220px;
   border-spacing: 30px;
   background-color: rgb(50, 100, 85);
+}
+
+.controlCenter {
+  height: 120px;
+  width: 150px;
+  border-spacing: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 200;
+  background-color: black;
 }
