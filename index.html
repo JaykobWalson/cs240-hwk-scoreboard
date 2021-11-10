@@ -19,11 +19,41 @@
       </tr>
       <tr class = "homeScores">
         <th>HOME </th>
-        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        <td id = "home1">0
+          </td>
+          <td id = "home2">0
+          </td>
+          <td id = "home3">0
+          </td>
+          <td id = "home4">0
+          </td>
+          <td id = "home5">0
+          </td>
+          <td id = "home6">0
+          </td>
+          <td id = "home7">0
+          </td>
+          <td id = "homeTotal" class = "totals">0
+          </td>
       </tr>
       <tr class = "awayScores">
-        <th>AWAY</th>
-        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        <th id aways>AWAY</th>
+        <td id = "away1" >0
+        </td>
+        <td id = "away2">0
+        </td>
+        <td id = "away3">0
+        </td>
+        <td id = "away4">0
+        </td>
+        <td id = "away5">0
+        </td>
+        <td id = "away6">0
+        </td>
+        <td id = "away7">0
+        </td>
+        <td id = "awayTotal" class = "totals">0
+        </td>
       </tr>
     </tbody>
     </table>
@@ -31,35 +61,35 @@
     <table class = "controlCenter">
       <title>Control Center</title>
       <tr class = "selectTeam">
-      <td>Who: <select value = "teams">
-        <option>
-          Away
-        </option>
-        <option>
+      <td>Who: <select id = "teams">
+        <option value = "homeTeam">
           Home
+        </option>
+        <option value = "awayTeam">
+          Away
         </option>
       </select>
       </td>
-      <td>Inning: <select value = "points">
-        <option>
+      <td>Inning: <select id = "inning">
+        <option value = "1">
           1
         </option>
-        <option>
+        <option value = "2">
           2
         </option>
-        <option>
+        <option value = "3">
           3
         </option>
-        <option>
+        <option value = "4">
           4
         </option>
-        <option>
+        <option value = "5">
           5
         </option>
-        <option>
+        <option value = "6">
           6
         </option>
-        <option>
+        <option value = "7">
           7
         </option>
       </select></td>
@@ -76,7 +106,7 @@
     <tr>
       <td> Sound:
       <button id = "tune">🎵</button>
-      <button id = "annoyingSong">🎹</button>
+      <button id = "memeSong">🎹</button>
     </td>
     </tr>
     
