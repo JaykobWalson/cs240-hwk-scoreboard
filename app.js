@@ -5,6 +5,9 @@
 var buildUp = new Audio("sounds/buildup.mp3");
 var charge1 = new Audio("sounds/charge1.mp3");
 var charge2 = new Audio("sounds/charge2.mp3");
+var song = new Audio(
+  "sounds/Miku Hatsune Loituma's Finnish Ievan Polkka (Properly pitched).mp3"
+);
 
 var teamPlaying = document.getElementById("teams").value;
 let teamSelect = document.getElementById("teams");
@@ -78,4 +81,6 @@ chargeUp.addEventListener("click", function () {
 });
 
 let polka = document.getElementById("memeSong");
-polka.addEventListener("click", function () {});
+polka.addEventListener("click", function () {
+  song.play();
+});
